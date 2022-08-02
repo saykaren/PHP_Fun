@@ -77,6 +77,13 @@ if (isset($_POST['submit'])) {
     }
 }
 
+$db = new mysqli(
+    'localhost:8080',
+    'user',
+    'password',
+    'database'
+);
+$db->close();
 ?>
 
 <form action="" method="post">
@@ -148,3 +155,5 @@ if (isset($_POST['submit'])) {
     ?>>I accept the T&amp;C<br>
     <input type="submit" value="Search">
 </form>
+
+
